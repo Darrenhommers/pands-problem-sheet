@@ -1,15 +1,15 @@
 # bank.py
+# Prompt user to enter 2 amounts in cent
+# Add the 2 amounts
+# Print the answer with a euro sign and decimal point
 # Author: Darren Miller
 # Week 02 task
 
-amount1= input("What is amount 1: € ")
-print (f"Amount 1= € {amount1}")
+amount1= float (input("Enter amount 1 (in cent):  "))
+amount2= float (input("Enter amount 2 (in cent):  "))
+Total= (float(amount1 + amount2)/100)
 
-amount2= input("What is amount 2: € ")
-print (f"Amount 2= € {amount2}")
+print(f"The sum of these two values is: €{Total: .2f}")
 
-ans= int(amount1 + amount2)
-
-print(f"The sum of these is: € {ans}")
 
 
